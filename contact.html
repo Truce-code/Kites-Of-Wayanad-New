@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kites Of Wayanad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-poppins pt-20">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50" id="navbar">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html"><img src="kites.jpg" alt="Logo" class="h-14 md:h-20 w-auto object-contain"></a>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-teal-600">Home</a>
+                <a href="about.html" class="hover:text-teal-600">About</a>
+                <a href="packages.html" class="hover:text-teal-600">Packages</a>
+                <a href="contact.html" class="text-teal-600 font-bold border-b-2 border-teal-600">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-teal-900 text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="packages.html">Packages</a>
+                <a href="contact.html" class="text-teal-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="h-[70vh] flex items-center justify-center bg-teal-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('wayanad.jpg')] bg-cover bg-center opacity-20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto text-teal-100">Ready to start your Wayanad adventure? We are just a message away.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="https://wa.me/918592015257?text=Hi%20Kites%20of%20Wayanad!%20I'm%20interested%20in%20your%20packages." class="px-10 py-4 bg-green-500 hover:bg-green-600 rounded-full font-bold transition-all flex items-center justify-center gap-3 shadow-lg">
+                    <i class="fab fa-whatsapp text-2xl"></i> WhatsApp Us
+                </a>
+                <a href="tel:+918592015257" class="px-10 py-4 border-2 border-white hover:bg-white hover:text-teal-900 rounded-full font-bold transition-all flex items-center justify-center gap-3">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-lg text-gray-800 mb-2">Do you provide pick-up from the railway station?</h4>
+                    <p class="text-gray-600">Yes! We can arrange pick-up from nearby railway stations like Kozhikode (Calicut) or Mysore upon request.</p>
+                </div>
+                <div class="border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-lg text-gray-800 mb-2">Is food included in the package?</h4>
+                    <p class="text-gray-600">Usually, food is not included to give you the flexibility to try various local cuisines, but we can include it in a custom package.</p>
+                </div>
+                <div class="border rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-lg text-gray-800 mb-2">Can we customize the itinerary?</h4>
+                    <p class="text-gray-600">Absolutely! The 4-day plan is our best-seller, but we are happy to tailor the trip to your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center"><p>&copy; 2025 Kites Of Wayanad.</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

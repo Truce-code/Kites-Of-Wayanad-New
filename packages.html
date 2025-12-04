@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - Kites Of Wayanad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-poppins pt-20">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50" id="navbar">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html"><img src="kites.jpg" alt="Logo" class="h-14 md:h-20 w-auto object-contain"></a>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-teal-600">Home</a>
+                <a href="about.html" class="hover:text-teal-600">About</a>
+                <a href="packages.html" class="text-teal-600 font-bold border-b-2 border-teal-600">Packages</a>
+                <a href="contact.html" class="hover:text-teal-600">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-teal-900 text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="packages.html" class="text-teal-600">Packages</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Packages Content -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900">Exclusive 4-Day Itinerary</h2>
+                <p class="text-gray-600 mt-4">A carefully curated journey through the best of Wayanad.</p>
+                <div class="w-24 h-1 bg-teal-500 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Day 1 (Fixed: Removed opacity-0) -->
+            <div class="package-card flex flex-col md:flex-row items-center gap-10 mb-20">
+                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="lakkidi.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 01</span>
+                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Highland Gateway</h3>
+                    <ul class="space-y-3 text-gray-700 text-lg">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Lakkidi View Point & Chain Tree</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Enn Ooru Tribal Village</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Pookode Lake & Honey Museum</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Banasura Sagar Dam & Karlad Lake</li>
+                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-3"></i>Zip Line Adventure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 2 (Fixed: Removed opacity-0) -->
+            <div class="package-card flex flex-col md:flex-row-reverse items-center gap-10 mb-20">
+                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="900kandi.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 02</span>
+                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Adrenaline & Heights</h3>
+                    <ul class="space-y-3 text-gray-700 text-lg">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>900 Kandi Glass Bridge <span class="text-sm text-teal-600 bg-teal-50 px-2 rounded ml-2">Off-road ₹1200</span></li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Zip Line & Zip Cycling</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Soochipara Waterfalls</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Attamala View Point & 3D Glass Bridge</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 3 (Fixed: Removed opacity-0) -->
+            <div class="package-card flex flex-col md:flex-row items-center gap-10 mb-20">
+                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="edakkalcaves.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 03</span>
+                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">History & Heritage</h3>
+                    <ul class="space-y-3 text-gray-700 text-lg">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Edakkal Caves</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Phantom Rock & Karapuzha Dam</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Heritage Museum & Agri Farm</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Kanthanpara Waterfalls</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 4 (Fixed: Removed opacity-0) -->
+            <div class="package-card flex flex-col md:flex-row-reverse items-center gap-10">
+                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="kurumbalakotta.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 04</span>
+                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Wild & Divine</h3>
+                    <ul class="space-y-3 text-gray-700 text-lg">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Kurumbalakotta Sunrise Point</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Kuruva Dweep</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Tholpetti Wildlife Sanctuary</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Thirunelli Temple</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip Essentials (Included/Excluded) -->
+    <section class="py-16 bg-teal-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold text-teal-700 mb-6"><i class="fas fa-thumbs-up mr-2"></i> What's Included</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Pick-up and Drop-off services</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Professional Driver/Guide</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Parking & Toll Charges</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Sightseeing as per itinerary</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold text-red-500 mb-6"><i class="fas fa-thumbs-down mr-2"></i> What's Excluded</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-times text-red-500 mr-2"></i> Entry Tickets for Attractions</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i> Food & Beverages</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i> Activity Charges (Zip Line, etc.)</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i> Personal Expenses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center"><p>&copy; 2025 Kites Of Wayanad.</p></footer>
+    <a href="https://wa.me/918592015257?text=Hi%20Kites%20of%20Wayanad!" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 animate-bounce-custom flex items-center justify-center"><i class="fab fa-whatsapp text-4xl"></i></a>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

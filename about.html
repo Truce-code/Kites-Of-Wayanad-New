@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kites Of Wayanad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-poppins pt-20">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50" id="navbar">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html"><img src="kites.jpg" alt="Logo" class="h-14 md:h-20 w-auto object-contain"></a>
+            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-teal-600">Home</a>
+                <a href="about.html" class="text-teal-600 font-bold border-b-2 border-teal-600">About</a>
+                <a href="packages.html" class="hover:text-teal-600">Packages</a>
+                <a href="contact.html" class="hover:text-teal-600">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-teal-900 text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="text-teal-600">About</a>
+                <a href="packages.html">Packages</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Header -->
+    <div class="bg-teal-900 text-white py-24 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('wayanad.jpg')] bg-cover bg-center opacity-10"></div>
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Story</h1>
+            <p class="text-xl text-teal-100 max-w-2xl mx-auto">We don't just guide tours; we craft memories in the heart of Wayanad.</p>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white -mt-10 relative z-20 container mx-auto px-6 rounded-xl shadow-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-4xl font-bold text-teal-600">500+</h3>
+                <p class="text-gray-500 mt-2">Happy Travelers</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-teal-600">50+</h3>
+                <p class="text-gray-500 mt-2">Destinations</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-teal-600">10+</h3>
+                <p class="text-gray-500 mt-2">Years Experience</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold text-teal-600">24/7</h3>
+                <p class="text-gray-500 mt-2">Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Visual Journey</h2>
+                <div class="w-16 h-1 bg-teal-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Items -->
+                <div class="gallery-item overflow-hidden rounded-xl h-64 group relative cursor-pointer"><img src="pookode.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end p-6 text-white font-bold transition duration-300">Pookode Lake</div></div>
+                <div class="gallery-item overflow-hidden rounded-xl h-64 group relative cursor-pointer"><img src="zipline.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end p-6 text-white font-bold transition duration-300">Zipline Adventure</div></div>
+                <div class="gallery-item overflow-hidden rounded-xl h-64 group relative cursor-pointer"><img src="soojipara.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end p-6 text-white font-bold transition duration-300">Soochipara Waterfalls</div></div>
+                <div class="gallery-item overflow-hidden rounded-xl h-64 group relative cursor-pointer"><img src="heritage.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end p-6 text-white font-bold transition duration-300">Heritage Museum</div></div>
+                <div class="gallery-item overflow-hidden rounded-xl h-64 group relative cursor-pointer"><img src="kanthanpara.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end p-6 text-white font-bold transition duration-300">Kanthanpara Falls</div></div>
+                <div class="gallery-item overflow-hidden rounded-xl h-64 group relative cursor-pointer"><img src="Kuruvadweep.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-end p-6 text-white font-bold transition duration-300">Kuruva Dweep</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center"><p>&copy; 2025 Kites Of Wayanad.</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
