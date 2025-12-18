@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Packages - Kites Of Wayanad</title>
+    <title>Our Packages - Kites Of Wayanad</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -23,6 +23,7 @@
             </div>
             <button id="mobile-menu-btn" class="md:hidden text-teal-900 text-2xl"><i class="fas fa-bars"></i></button>
         </div>
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
             <div class="flex flex-col px-6 py-4 space-y-4 font-medium text-gray-700">
                 <a href="index.html">Home</a>
@@ -33,167 +34,98 @@
         </div>
     </nav>
 
-    <!-- Packages Content -->
-    <section class="py-16 px-6">
+    <!-- Packages Grid Header -->
+    <div class="bg-teal-900 text-white py-20 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('wayanad.jpg')] bg-cover bg-center opacity-20"></div>
+        <div class="relative z-10 container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Choose Your Adventure</h1>
+            <p class="text-xl text-teal-100 max-w-2xl mx-auto">From romantic getaways to group adventures, we have the perfect plan for you.</p>
+        </div>
+    </div>
+
+    <!-- Package Cards Grid -->
+    <section class="py-20 px-6">
         <div class="container mx-auto">
-            
-            <!-- ========================================= -->
-            <!-- PACKAGE 1: 4-DAY EXCLUSIVE ITINERARY      -->
-            <!-- ========================================= -->
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900">Exclusive 4-Day Itinerary</h2>
-                <p class="text-gray-600 mt-4">A carefully curated journey through the best of Wayanad.</p>
-                <div class="w-24 h-1 bg-teal-500 mx-auto mt-4"></div>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                
+                <!-- Package 1: 4-Day Standard -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 flex flex-col group border border-gray-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="lakkidi.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">4 Days</div>
+                        <div class="absolute bottom-4 left-4 bg-yellow-400 text-teal-900 px-3 py-1 rounded-md text-xs font-bold shadow-md uppercase tracking-wider">Most Popular</div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Exclusive Wayanad</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">A complete journey covering Lakkidi, 900 Kandi Glass Bridge, Edakkal Caves, and Waterfalls.</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-teal-600 font-bold"><i class="fas fa-map-marker-alt mr-1"></i> Wayanad</span>
+                            <a href="package-wayanad-4day.html" class="bg-teal-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-700 transition">View Itinerary</a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Day 1 -->
-            <div class="package-card flex flex-col md:flex-row items-center gap-10 mb-20">
-                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                    <img src="lakkidi.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <!-- Package 2: 3-Day Wayanad + Coorg -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 flex flex-col group border border-gray-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="coorg1.avif" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-teal-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">3 Days</div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Wayanad & Coorg Fusion</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">The perfect blend of Kerala's hills and the Scotland of India (Coorg). Golden Temple & Dubare Camp included.</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-teal-600 font-bold"><i class="fas fa-map-marker-alt mr-1"></i> Wayanad + Coorg</span>
+                            <a href="package-coorg-3day.html" class="bg-teal-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-700 transition">View Itinerary</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2">
-                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 01</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Highland Gateway</h3>
-                    <ul class="space-y-3 text-gray-700 text-lg">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Lakkidi View Point & Chain Tree</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Enn Ooru Tribal Village</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Pookode Lake & Honey Museum</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Banasura Sagar Dam & Karlad Lake</li>
-                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-3"></i>Zip Line Adventure</li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Day 2 -->
-            <div class="package-card flex flex-col md:flex-row-reverse items-center gap-10 mb-20">
-                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                    <img src="900kandi.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <!-- Package 3: Couple Package -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 flex flex-col group border border-gray-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <!-- Uses Banasura image for romantic vibes -->
+                        <img src="couple.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">3 Days / 2 Nights</div>
+                        <div class="absolute bottom-4 left-4 bg-pink-100 text-pink-700 px-3 py-1 rounded-md text-xs font-bold shadow-md uppercase tracking-wider"><i class="fas fa-heart mr-1"></i> Honeymoon Special</div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Romantic Wayanad</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Designed for couples. Private resort stay, candle-light dinner options, and serene sunset viewpoints.</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-pink-600 font-bold"><i class="fas fa-user-friends mr-1"></i> Couple Tour</span>
+                            <a href="package-couple-3day.html" class="bg-pink-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-pink-700 transition">View Itinerary</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2">
-                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 02</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Adrenaline & Heights</h3>
-                    <ul class="space-y-3 text-gray-700 text-lg">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>900 Kandi Glass Bridge <span class="text-sm text-teal-600 bg-teal-50 px-2 rounded ml-2">Off-road ₹1200</span></li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Zip Line & Zip Cycling</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Soochipara Waterfalls</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Attamala View Point & 3D Glass Bridge</li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Day 3 -->
-            <div class="package-card flex flex-col md:flex-row items-center gap-10 mb-20">
-                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                    <img src="edakkalcaves.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                 <!-- Package 4: Group Package -->
+                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 flex flex-col group border border-gray-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <!-- Uses 900 Kandi image for adventure vibes -->
+                        <img src="group.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-bold shadow-md">2 Days / 1 Night</div>
+                        <div class="absolute bottom-4 left-4 bg-orange-100 text-orange-700 px-3 py-1 rounded-md text-xs font-bold shadow-md uppercase tracking-wider"><i class="fas fa-fire mr-1"></i> Group Blast</div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Wayanad Group Getaway</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Perfect for friends & corporate teams. Includes off-road jeep safari, campfire, music, and trekking spots.</p>
+                        <div class="flex justify-between items-center border-t pt-4">
+                            <span class="text-orange-600 font-bold"><i class="fas fa-users mr-1"></i> Group Tour</span>
+                            <a href="package-group-2day.html" class="bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-orange-700 transition">View Itinerary</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2">
-                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 03</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">History & Heritage</h3>
-                    <ul class="space-y-3 text-gray-700 text-lg">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Edakkal Caves</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Phantom Rock & Karapuzha Dam</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Heritage Museum & Agri Farm</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Kanthanpara Waterfalls</li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Day 4 -->
-            <div class="package-card flex flex-col md:flex-row-reverse items-center gap-10 mb-32">
-                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                    <img src="kurumbalakotta.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 04</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Wild & Divine</h3>
-                    <ul class="space-y-3 text-gray-700 text-lg">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Kurumbalakotta Sunrise Point</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Kuruva Dweep</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Tholpetti Wildlife Sanctuary</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Thirunelli Temple</li>
-                    </ul>
-                </div>
             </div>
-
-            <!-- ========================================= -->
-            <!-- PACKAGE 2: 3-DAY WAYANAD-COORG COMBO      -->
-            <!-- ========================================= -->
-            <div class="text-center mb-16 pt-10 border-t border-gray-200">
-                <h2 class="text-4xl font-bold text-gray-900">Wayanad & Coorg Fusion (3 Days)</h2>
-                <p class="text-gray-600 mt-4">The perfect blend of Kerala's hills and the Scotland of India.</p>
-                <div class="w-24 h-1 bg-teal-500 mx-auto mt-4"></div>
-            </div>
-
-            <!-- New Package Day 1 -->
-            <div class="package-card flex flex-col md:flex-row items-center gap-10 mb-20">
-                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                    <!-- Placeholder: Ensure you have an image for Pookode or resort -->
-                    <img src="pookode.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 01</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Arrival & Adventure</h3>
-                    <ul class="space-y-3 text-gray-700 text-lg">
-                        <li class="flex items-center"><i class="fas fa-car text-teal-500 mr-3"></i>Pickup from Calicut & Resort Check-in</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>En Ooru Tribal Heritage Village</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Pookode Lake (Boating)</li>
-                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-3"></i>Adventure Activities <span class="text-xs text-orange-600 bg-orange-100 px-2 rounded ml-2 font-bold">Extra Cost</span></li>
-                        <li class="pl-9 text-sm text-gray-500 italic mb-2">(Zipline, Bungee Jumping, Giant Swing)</li>
-                        <li class="flex items-center"><i class="fas fa-moon text-teal-500 mr-3"></i>Dinner & Overnight Stay</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- New Package Day 2 -->
-            <div class="package-card flex flex-col md:flex-row-reverse items-center gap-10 mb-20">
-                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                    <!-- Placeholder: Reuse Edakkal image or new scenic one -->
-                    <img src="edakkalcaves.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 02</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">Wayanad to Coorg</h3>
-                    <ul class="space-y-3 text-gray-700 text-lg">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-teal-500 mr-3"></i>Karapuzha Dam Photo Stop</li>
-                        <li class="flex items-center"><i class="fas fa-hiking text-teal-500 mr-3"></i>Edakkal Caves (Prehistoric Trek)</li>
-                        <li class="flex items-center"><i class="fas fa-utensils text-teal-500 mr-3"></i>Lunch En Route</li>
-                        <li class="flex items-center"><i class="fas fa-route text-teal-500 mr-3"></i>Scenic Drive to Coorg</li>
-                        <li class="flex items-center"><i class="fas fa-bed text-teal-500 mr-3"></i>Check-in & Dinner in Coorg</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- New Package Day 3 -->
-            <div class="package-card flex flex-col md:flex-row items-center gap-10 mb-20">
-                <div class="w-full md:w-1/2 h-64 md:h-[400px] rounded-2xl overflow-hidden shadow-lg group">
-                    <!-- IMPORTANT: Add an image named 'goldentemple.jpg' to your folder -->
-                    <img src="harangi.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Golden Temple Coorg">
-                </div>
-                <div class="w-full md:w-1/2">
-                    <span class="bg-teal-100 text-teal-800 px-4 py-1 rounded-full text-sm font-bold">Day 03</span>
-                    <h3 class="text-3xl font-bold mt-4 mb-4 text-gray-800">The Coorg Experience</h3>
-                    <ul class="space-y-3 text-gray-700 text-lg">
-                        <li class="flex items-center"><i class="fas fa-tree text-teal-500 mr-3"></i>Bamboo Forest Drive</li>
-                        <li class="flex items-center"><i class="fas fa-elephant text-teal-500 mr-3"></i>Dubare Elephant Camp</li>
-                        <li class="flex items-center"><i class="fas fa-om text-teal-500 mr-3"></i>Namdroling Monastery (Golden Temple)</li>
-                        <li class="flex items-center"><i class="fas fa-water text-teal-500 mr-3"></i>Harangi Dam View</li>
-                        <li class="flex items-center"><i class="fas fa-car-side text-teal-500 mr-3"></i>Drop-off at Calicut</li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </section>
-
-
-  
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-10 text-center"><p>&copy; 2025 Kites Of Wayanad.</p></footer>
     <a href="https://wa.me/918592015257?text=Hi%20Kites%20of%20Wayanad!" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 animate-bounce-custom flex items-center justify-center"><i class="fab fa-whatsapp text-4xl"></i></a>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
